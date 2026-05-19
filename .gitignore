@@ -1,10 +1,10 @@
-profiles.yml
-target*/
+airbnb/profiles.yml
+airbnb/target*/
 logs/
 
-package-lock.yml
-dbt_packages/
-dbt_internal_packages/
+airbnb/package-lock.yml
+airbnb/dbt_packages/
+airbnb/dbt_internal_packages/
 .env
 
 .vscode
