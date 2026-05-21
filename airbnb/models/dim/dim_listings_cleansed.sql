@@ -23,7 +23,7 @@ SELECT
     10,
     2
   ) AS price,
-  price_str,
+  price_str as price_test,
   created_at,
   updated_at
 FROM
