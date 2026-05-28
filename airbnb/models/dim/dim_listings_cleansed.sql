@@ -24,7 +24,7 @@ SELECT
     2
   ) AS price,
   price_str,
-  created_at,
+  created_at, 
   updated_at
 FROM
   src_listings

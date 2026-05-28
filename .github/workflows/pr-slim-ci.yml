@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   slim-ci:
-    name: Build modified with defer to prod artifact
+    name: Build modified with defer to prod artifact added this
     runs-on: ubuntu-latest
     env:
       SNOWFLAKE_ACCOUNT:      "${{ secrets.SNOWFLAKE_ACCOUNT }}"
