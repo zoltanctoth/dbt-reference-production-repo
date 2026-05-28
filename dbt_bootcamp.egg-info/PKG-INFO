@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: dbt-bootcamp
+Version: 1.11.0
+Requires-Python: <3.14,>=3.10
+Requires-Dist: dbt-core~=1.11.0
+Requires-Dist: dbt-snowflake~=1.11.0
+Requires-Dist: dbt-autofix~=0.18.0
+Requires-Dist: dagster-dbt~=0.28.0
+Requires-Dist: dagster-webserver~=1.12.0
