@@ -22,7 +22,7 @@ SELECT
   ) :: NUMBER(
     10,
     2
-  ) AS price,
+  ) AS price_str,
   price_str,
   created_at,
   updated_at
