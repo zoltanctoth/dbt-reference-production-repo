@@ -16,7 +16,7 @@ jobs:
     env:
       SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
       DBT_USER: ${{ secrets.DBT_USER }}
-      PRIVATE_KEY_PASSPHRASE: ${{ secrets.PRIVATE_KEY_PASS }}
+      PRIVATE_KEY_PASSPHRASE: ${{ secrets.PRIVATEKEY_PASS }}
 
     steps:
       - uses: actions/checkout@v6
@@ -34,6 +34,7 @@ jobs:
         run: |
           set -euo pipefail
           test -n "$PRIVATE_KEY_BASE64"
+          test -n "$PRIVATE_KEY_PASSPHRASE"
           key_path="$RUNNER_TEMP/snowflake_key.p8"
           printf '%s' "$PRIVATE_KEY_BASE64" | base64 --decode > "$key_path"
           chmod 600 "$key_path"
