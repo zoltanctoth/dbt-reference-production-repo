@@ -17,7 +17,7 @@ SELECT
   END AS minimum_nights,
   host_id,
   REPLACE(
-    price_stra,
+    price_str,
     '$'
   ) :: NUMBER(
     10,
