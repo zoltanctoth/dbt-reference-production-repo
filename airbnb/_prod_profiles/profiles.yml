@@ -6,7 +6,7 @@ airbnb:
       user: "{{ env_var('DBT_USER') }}"
 
       role: TRANSFORM
-      private_key: "{{ env_var('PRIVATE_KEY') }}"
+      private_key_path: "{{ env_var('PRIVATE_KEY_PATH') }}"
       private_key_passphrase: "{{ env_var('PRIVATE_KEY_PASSPHRASE') }}"
 
       database: AIRBNB
@@ -19,7 +19,7 @@ airbnb:
       user: "{{ env_var('DBT_USER') }}"
 
       role: TRANSFORM
-      private_key: "{{ env_var('PRIVATE_KEY') }}"
+      private_key_path: "{{ env_var('PRIVATE_KEY_PATH') }}"
       private_key_passphrase: "{{ env_var('PRIVATE_KEY_PASSPHRASE') }}"
 
       database: AIRBNB
@@ -32,7 +32,7 @@ airbnb:
       user: "{{ env_var('DBT_USER') }}"
 
       role: TRANSFORM
-      private_key: "{{ env_var('PRIVATE_KEY') }}"
+      private_key_path: "{{ env_var('PRIVATE_KEY_PATH') }}"
       private_key_passphrase: "{{ env_var('PRIVATE_KEY_PASSPHRASE') }}"
 
       database: AIRBNB
